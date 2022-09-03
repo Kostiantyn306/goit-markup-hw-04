@@ -5,6 +5,7 @@
   --minor-text: #757575;
   --akcent-color: #2196f3;
   --white-color: #ffffff;
+  --border-color: #afb1b8;
 }
 /* index.html */
 body {
@@ -13,6 +14,7 @@ body {
   color: var(--basic-text);
   font-family: 'Roboto';
   font-size: 14px;
+  max-width: 1600px;
 }
 
 /* =======RESET========= */
@@ -94,6 +96,8 @@ address {
   justify-content: center;
   align-items: center;
 }
+/* .logo-icon {
+} */
 .link-navig {
   display: flex;
   align-items: center;
@@ -118,6 +122,11 @@ address {
   margin-left: auto;
 }
 .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -167,9 +176,16 @@ address {
   color: var(--akcent-color);
 }
 .hero {
-  background-color: var(--fone-color);
   padding-bottom: 200px;
   padding-top: 200px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--fone-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../imeges/bg-hero.jpg');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 /* main */
 
@@ -206,16 +222,35 @@ address {
 }
 .benefits-lists {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 .benefits-items {
   width: 270px;
+}
+.benefits-icon {
+  /* width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  display: block; */
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 .benefits-title {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--basic-text);
   padding-bottom: 10px;
+  font-size: 14px;
 }
 .benefits-list {
   line-height: 1.71;
@@ -283,7 +318,44 @@ address {
   text-align: center;
   color: var(--minor-text);
 }
-
+/* ==========
+                Клієнти
+====== */
+/* .customers-list {
+} */
+/* .customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+} */
+.customers-title {
+  display: flex;
+  gap: 30px;
+  padding-right: 215px;
+  padding-left: 215px;
+  align-items: center;
+  justify-items: center;
+}
+.customers-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo-icon {
+  align-items: center;
+  justify-items: center;
+}
+/* .logo-icon {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+} */
 /* portfolio */
 
 .button {
@@ -390,6 +462,7 @@ address {
   color: #ffffff;
   margin-bottom: 9px;
 }
+
 /* .footer-list-contact {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
@@ -404,4 +477,7 @@ address {
   gap: 9px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-icon {
+  align-items: baseline;
 }
