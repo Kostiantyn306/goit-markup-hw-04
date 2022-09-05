@@ -217,7 +217,7 @@ address {
   gap: 30px;
 }
 .benefits-items {
-  width: 270px;
+  max-width: 270px;
 }
 .benefits-title {
   font-weight: 700;
@@ -225,6 +225,7 @@ address {
   text-transform: uppercase;
   color: var(--basic-text);
   padding-bottom: 10px;
+  font-size: 14px;
 }
 .benefits-list {
   line-height: 1.71;
@@ -475,4 +476,36 @@ address {
   align-items: center;
   justify-items: center;
   gap: 10px;
+}
+.benefits-border {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.client-list {
+  display: flex;
+
+  fill: #afb1b8;
+  gap: 30px;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client:hover,
+.client:focus {
+  fill: var(--akcent-color);
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
