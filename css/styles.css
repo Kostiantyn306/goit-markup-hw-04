@@ -70,6 +70,7 @@ address {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 .section {
   padding: 94px 0;
