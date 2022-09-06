@@ -13,7 +13,6 @@ body {
   color: var(--basic-text);
   font-family: 'Roboto';
   font-size: 14px;
-  max-width: 1600px;
 }
 
 /* =======RESET========= */
@@ -176,8 +175,10 @@ address {
   background-color: var(--fone-color);
   padding-bottom: 200px;
   padding-top: 200px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../imeges/bg-hero.jpg);
+  max-width: 1600px;
 }
 /* main */
 
@@ -433,7 +434,7 @@ address {
 .footer-lists {
   display: block;
   justify-items: center;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 /* ========Іконки=======  */
 .socials-link {
@@ -498,17 +499,25 @@ address {
   gap: 30px;
 }
 .client {
+  width: 170px;
+}
+.client-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.client:hover,
-.client:focus {
-  fill: var(--akcent-color);
+.client-links:hover,
+.client-links:focus {
   border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--akcent-color);
+  border-color: 1px solid #2196f3;
   border-radius: 4px;
 }
