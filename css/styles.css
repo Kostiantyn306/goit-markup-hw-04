@@ -504,17 +504,20 @@ address {
 }
 .client-links {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: #afb1b8;
 }
 .client-links:hover,
 .client-links:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
+
 /* .client-icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -523,7 +526,9 @@ address {
 } */
 .client-icon:hover,
 .client-icon:focus {
+  fill: currentColor;
   fill: var(--akcent-color);
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+}
+.client-icon {
+  fill: currentColor;
 }
