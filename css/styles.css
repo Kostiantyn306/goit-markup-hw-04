@@ -515,10 +515,15 @@ address {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
-
+/* .client-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+} */
 .client-icon:hover,
 .client-icon:focus {
   fill: var(--akcent-color);
-  border-color: 1px solid #2196f3;
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
